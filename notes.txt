@@ -1,0 +1,40 @@
+ARRAYS : 
+Array is used to store multiple elements at the same place. Elements inside the array are accessed using their index number. There are two ways to create an array.
+functions on array : 
+1. push() -> this basically adds an element at the end of the array.
+2. pop() -> this basically removes an element at the end of the array.
+3. shift() -> this removes an element from the start.
+4. unshift() -> this adds an element at the start.
+5. indexOf() -> this tells the index of an element.
+6. some() ->  checks if the condition for all elements if some follow the condition then it returns true or else false.
+7. every() -> checks if the condition for all elements if all follow the condition then it returns true or else false.
+8. forEach() -> this is used to perform something on the array without returning a new array but if we try it gives undefined.
+9. map() -> this is used to perform some operations on the elements and return a new array without making any changes in the original array and the size remains the same.
+10. reduce() -> reduces the elements in the array to a single number and it looks like this `num.reduce((acc,val) => { return acc + val;},0)` here acc is the accumulator that stores the values that is returned for each element iteration and its value is to be set here it is 0.
+11. filter() -> filters the array according to the condition that is given and gives a new array that contains only those elements that were true to the condition and its size may be less than the size of the original array.
+
+
+OBJECTS : 
+An object in JavaScript is used to store data as key–value pairs, where each value is accessed using its corresponding property name.
+Objects can be created using 2 ways :
+1. let obj1 = {
+    name : "Mayank",
+    age : 21,
+};
+2. let obj2 = new Object({name:"Jin sakai"});
+
+The elements in the objects can be accessed by 2 ways as well. one is the `obj.name` and the other is `obj["name"]`.
+The elements or the key value pair can be deleted using this keyword that is `delete obj.name`.
+Nested objects means there might be some elements that have more values to them to define which creates a new object in a object.
+let obj = {
+    name : "Mayank",
+    age : 21,
+    social : {
+        instagram : "hahaha",
+        facebook : "hehehe"
+    }
+}
+
+
+freeze() basically freezes the object so that no changes in the object can be made like addition of properties or changes in the values `Object.freeze(obj)`.
+seal() basically seals the object so that no addition of elements in the object can be made but changes in the values can be done `Object.seal(obj)`.
