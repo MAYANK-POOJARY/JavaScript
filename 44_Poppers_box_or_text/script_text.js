@@ -16,6 +16,7 @@ btn.addEventListener("click", function () {
   if (start !== null) return;
   start = setInterval(function () {
     let num = Math.floor(Math.random() * arr.length);
+    let scale = Math.random() * 3;
     let rotate = Math.floor(Math.random() * 360);
     let x = Math.random() * 100;
     let y = Math.random() * 100;
@@ -27,6 +28,7 @@ btn.addEventListener("click", function () {
     h1.style.position = "absolute";
     h1.style.left = x + "%";
     h1.style.top = y + "%";
+    h1.style.scale = scale;
     main.appendChild(h1);
   }, 500);
 
