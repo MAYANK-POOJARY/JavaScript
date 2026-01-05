@@ -65,7 +65,7 @@ main{
 
 #profile:hover{
     cursor: pointer;
-    background-color: rgb(190, 184, 184);
+    background: linear-gradient(grey,white);
 }
 
 .card p{
