@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right,black,rgb(16, 16, 16),rgb(16, 16, 16),black);
+    padding: 20px;
+    overflow: hidden;
+}
+
+#reels{
+    height: 100%;
+    width: 350px;
+    color: white;
+    margin: auto;
+    border-radius: 10px;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+
+}
+ 
+#reels::-webkit-scrollbar{
+    display: none;
+}
+
+.reel{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    scroll-snap-align: start;
+}
+
+.reel video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#user{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#btm{
+    position:absolute;
+    height: 15%;
+    bottom: 0;
+    padding: 10px;
+}
+
+button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+#user img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+#user h2{
+    font-size: 20px;
+    font-weight: 400px;
+}
+
+#desc{
+    font-weight: 400;
+    padding: 5px 10px;
+}
+
+#right{
+    position: absolute;
+    bottom: 20%;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action{
+    text-align: center;
+}
+
+.action i{
+    font-size: 26px;   
+}
+
+.action h3 {
+    padding-top: 3px;
+}
