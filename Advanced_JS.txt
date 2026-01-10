@@ -1,0 +1,17 @@
+OOPS :
+video - 56
+why is oops used ?
+ - example for building a small room no need for planning and taking everything into consideration but when creating towers everything is to be taken under consideration so that things are easily separable when finding any thing within the structure to make changes in them .
+ - when we make small projects creating variables and the things done in it can be identified easily and changes can be made faster , but in big projects everything should be planned properly so that finding the required part of the code becomes easy . The code contains objects , classes and functions which makes it easy to understand in big projects . It makes it modular(breaks into parts) , manageable , re-useable , scalable (handle many users) , easy to use , etc .
+
+object -- instead of using multiple variable to store information of a single person , we use object that stores all the detail about a person or any element and its keys can be used in other objects as well as variable names cant be used again .
+
+class -- class is like a blueprint which has the things that are normally present in elements of the same category like book , department , etc . 
+It has a `constructor function` which works automatically when the class is used to create an instance (new object) .
+The `new` keyword is used to create a blank object in which the data from the class will be stored .
+
+prototype - used for shared memory , cause when written in the class each object has its own function . We can write it externally as well `Class.prototype.function_name = func()` or within the class after the constructor function .
+
+
+video - 57 
+when we have to set the value of this in a function that is not window but to an object we use call , apply and bind . `call` is used to set the function to the object and it takes arguments as well `function_name.call(obj_name , arguments )` . `apply` is similar to call but it takes an array as an argument `function_name.apply(obj_name , [arguments] )` . `bind` is similar to call but it returns a function and we have to store it and call that function `let new_function = function_name.bind(obj_name , arguments ); new_function()`
