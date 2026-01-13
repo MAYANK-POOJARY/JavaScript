@@ -15,3 +15,8 @@ prototype - used for shared memory , cause when written in the class each object
 
 video - 57 
 when we have to set the value of this in a function that is not window but to an object we use call , apply and bind . `call` is used to set the function to the object and it takes arguments as well `function_name.call(obj_name , arguments )` . `apply` is similar to call but it takes an array as an argument `function_name.apply(obj_name , [arguments] )` . `bind` is similar to call but it returns a function and we have to store it and call that function `let new_function = function_name.bind(obj_name , arguments ); new_function()`
+
+Promises : 
+Promise basically means to get something . There are two states one is the pending state and the other is the fulfilled state which is either resolve or reject , resolve is the state when it returns the required data and reject is the state when it returns an error .
+Promises requires minimum two `then` when `fetch( )` is used to fetch the data as the data will be in a unreadable format so to turn it into readable format that is the Json we use the `JSON( )` function to convert it to an object so it becomes readable .
+`then` is used for resolve and `catch` is used for reject .
